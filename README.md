@@ -73,7 +73,7 @@ Salary Model: ```/CODE/salary_model```
 * y.csv - input truth for BERT model, taken from salary_pred.ipynb
 * BERT_salary_prediction.ipynb - model building for BERT prediction, originally run on colab
 
-Topics Model: ```/CODE/Topics Modeling```
+Topics Model: ```/CODE/topics_modeling```
 * Topics_Modeling.ipynb - standalone notebooks that utilized developed pre-processing methods and run the LDA model
 * tm_helper.py - python file containing all the pre-processing methods
 * lda_model.pkl - final LDA model, it can be loaded in Topics_Modeling.ipynb
