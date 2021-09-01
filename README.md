@@ -1,11 +1,8 @@
 # Job Search Visualization Dashboard
 
-=========================================================================
-DESCRIPTION
-=========================================================================
 
-OVERVIEW:
--------------------------------------------------------------------------
+
+## Overview
 Our project is meant to provide meaningful visualizations of data job 
 postings around the world. The final product is Tableau dashboard with 
 multiple views. 
@@ -41,9 +38,7 @@ The LDA model and analysis was implemented in Python and visualizations
 were produced using pyLDAvis
 
 
-=========================================================================
-INSTALLATION
-=========================================================================
+## Installation
 Our dashboard is meant to be accessible out of the box--only installation 
 of Tableau Desktop is neccessary to open the workbook. All associated 
 data used to generate the visualizations is saved along with the workbook
@@ -57,36 +52,32 @@ and/or modules found in CODE.
 
 
 
-=========================================================================
-EXECUTION
-=========================================================================
+## Execution
 Only an installation of Tableau is necessary to view the final dashboard. 
 
 If you would like to view the source code, relevant files are listed below.
 The jupyter notebooks have further details/comments. 
 
-	Data Sourcing: /CODE/data_sourcing
-	* indeed.py - Indeed scraper using BeautifulSoup
-	* selenium_scrape.ipynb - Indeed scraper using Selenium
+Data Sourcing: ```/CODE/data_sourcing```
+* indeed.py - Indeed scraper using BeautifulSoup
+* selenium_scrape.ipynb - Indeed scraper using Selenium
 
-	Data Cleaning: /CODE/data_cleaning 
-	* columns.txt - columns used from glassdoor.csv sourced from Kaggle 
-		dataset 
-	* glassdoor.ipynb, skills.ipynb - code to clean and generate data for 
-		Tableau
+Data Cleaning: ```/CODE/data_cleaning``` 
+* columns.txt - columns used from glassdoor.csv sourced from Kaggle dataset 
+* glassdoor.ipynb, skills.ipynb - code to clean and generate data for Tableau
 
-	Salary Model: /CODE/salary_model
-	* /app - files needed to build Flask app
-	* salary_pred.ipynb - data cleaning and model building for app
-	* X.csv - input values for BERT model, taken from salary_pred.ipynb
-	* y.csv - input truth for BERT model, taken from salary_pred.ipynb
-	* BERT_salary_prediction.ipynb - model building for BERT prediction, originally run on colab
-	
-	Topics Model: /CODE/Topics Modeling
-	* Topics_Modeling.ipynb - standalone notebooks that utilized developed pre-processing methods and run the LDA model
-	* tm_helper.py - python file containing all the pre-processing methods
-	* lda_model.pkl - final LDA model, it can be loaded in Topics_Modeling.ipynb
-	* processed_text.pkl - output text after applying pre-processing
-	* vectorizer.pkl - sklearn.feature_extraction.text.TfidfVectorizer
-	* glassdoor_us_only_ldavis.csv - final data set with job descriptions and model
+Salary Model: ```/CODE/salary_model```
+* /app - files needed to build Flask app
+* salary_pred.ipynb - data cleaning and model building for app
+* X.csv - input values for BERT model, taken from salary_pred.ipynb
+* y.csv - input truth for BERT model, taken from salary_pred.ipynb
+* BERT_salary_prediction.ipynb - model building for BERT prediction, originally run on colab
+
+Topics Model: ```/CODE/Topics Modeling```
+* Topics_Modeling.ipynb - standalone notebooks that utilized developed pre-processing methods and run the LDA model
+* tm_helper.py - python file containing all the pre-processing methods
+* lda_model.pkl - final LDA model, it can be loaded in Topics_Modeling.ipynb
+* processed_text.pkl - output text after applying pre-processing
+* vectorizer.pkl - sklearn.feature_extraction.text.TfidfVectorizer
+* glassdoor_us_only_ldavis.csv - final data set with job descriptions and model
 
